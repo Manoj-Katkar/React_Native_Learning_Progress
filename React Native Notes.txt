@@ -49,7 +49,11 @@ How to resolve the above error :
 
 
 
-
+<Stack.Navigator 
+      screenOptions={{headerShown:false}}
+      >
+        <Stack.Screen name='DrawerNav' component={DrawerNav} />
+      </Stack.Navigator>
 
 
 
@@ -2834,6 +2838,10 @@ I have to refer the below code for implementing the drawer navigation
 
 
 
+//=========== For Images We use the below library =======================
+
+https://www.npmjs.com/package/react-native-fast-image
+
 
 Start implementing :
 
@@ -2841,6 +2849,37 @@ Stack -> drawer ->bottom
 
 
 
+// ================================= How to use the TouchableOpacity In Code ===================================
+
+  return (
+    <TouchableOpacity style={styles.button} onPress={handlePress}>
+      <Text style={styles.buttonText}>Press Me</Text>
+    </TouchableOpacity>
+  );
+
+
+const styles = StyleSheet.create({
+  button: {
+    backgroundColor: '#007BFF',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#FFF',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+});
+
+
+
+//Tommarow : 19/11/2024
+
+going through the nested routing (watch the tutorials)
+resolving the issue by my-self 
+then also not getting resolved then connect the rohit 
+create the design of the drawer navigation 
 
 // ================================== For Displaying the SVG images icons in React Native ============================================
 
@@ -2857,6 +2896,92 @@ Note :
       i) (While Converting the svg select the react native )
       ii) then use this version of t he react-native-svg = "react-native-svg": "^14.1.0"
       
+
+
+
+
+
+
+
+
+
+
+
+
+//================================ Things While Applying the Style In React Native ====================================
+
+
+  container: {
+    //for main parent do not give the flex : 1 then it will take the entire width also height 
+    flexDirection:"row",
+    justifyContent:"space-between",
+    marginTop:10,
+    backgroundColor: 'white',
+    
+  },
+  helloContainer:{
+    flexDirection:"row",
+    justifyContent:"space-evenlly",
+    alignItems: 'center',
+    // backgroundColor: 'red',
+    width: '75%',                     //Arrange the width how much each child should take 
+    height: 80, // Set height (optional)
+    
+  },
+  bellDrawerNav:{
+
+    flexDirection:"row",
+    justifyContent:"space-around",
+    alignItems: 'center',
+    // backgroundColor: 'yellow',
+    height: 80, // Set height (optional)
+    width: '25%',
+
+  },
+
+
+
+// project Drawer Navigation Screens I need to create 
+subscription
+verification
+legal-documents 
+transaction-history
+contact-us 
+about-us
+delete-account
+logout
+
+Doubts : 
+naming of the screen Convertion 
+
+somewhere you created 
+      register-screen.tsx and register.screen.tsx   ( which one to prefer )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
