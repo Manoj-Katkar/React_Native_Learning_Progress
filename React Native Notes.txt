@@ -2754,6 +2754,21 @@ Note : For Tab navigation we have the multiple options to implement it can be im
 
 
 
+                        <View style={styles.labelContainer}>
+
+                          <View style={styles.subContainer1}>
+                            <SubscriptionIcon/>
+                            <Text style={styles.labelText}>Subscription</Text>
+                          </View>
+
+                          <View style={styles.subContainer2}>
+                            <DrawerNextIcon style={styles.nextIcon} width={40} height={40}/>
+                          </View>
+
+                          
+                        </View>
+
+
 
 // =================================================== Nesting Navigators ===================================================
 
@@ -2961,9 +2976,15 @@ somewhere you created
 
 
 
+//Note :  for the React Native Navigation prefer the below dependencies if getting the some issue then I have to see the Quicknest project 
 
 
-
+"@react-navigation/bottom-tabs": "^6.5.12",
+    "@react-navigation/drawer": "^6.6.2",
+    "@react-navigation/material-top-tabs": "^6.6.14",
+    "@react-navigation/native": "^6.1.10",
+    "@react-navigation/native-stack": "^6.9.25",
+    "@react-navigation/stack": "^6.3.21",
 
 
 
