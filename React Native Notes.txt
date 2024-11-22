@@ -952,7 +952,30 @@ cover: The image will be resized to fill the entire container, potentially cropp
         image if the aspect ratios of the image and the container do not match. This option is 
         typically used when you want to ensure the image completely covers the available space.
 
-       
+
+// =========================== To Break the text and go on next Line use below ======================
+
+{"\n"}
+
+//===================== To set the lineHeight between the multiple lines in react native style for text use ===============
+
+lineHeight: 24, // Set the line height here
+
+
+
+//=================== To Add the horizontal Line in react native using the view ======================
+
+<View style={styles.horizontalLine} />
+
+//its css 
+  horizontalLine: {
+    width: '100%',
+    height: 1,
+    backgroundColor: '#ccc',
+    marginVertical: 20,
+  },
+
+
 
 //=========================== FlatList (With its Differant Props || Why to refer FlatList Over List || because it is faster to large lists ) =================================================
 
