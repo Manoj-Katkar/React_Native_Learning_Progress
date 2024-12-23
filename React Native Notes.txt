@@ -59,6 +59,7 @@ How to resolve the above error :
 
 
 
+Note :LanguageApp =  I have created the new app with the version :0.76.1 (it is stable hence) (Where I have implemented the localization in it)
 
 
 
@@ -3706,3 +3707,40 @@ const SafeTip = () => {
 //design will remain the same 
 
 export default SafeTip;
+
+
+
+
+
+
+//============================================== Notification handling code suggested by the shyam sir for the background and the kill state ======
+
+
+
+  // switch (type) {
+  //   case EventType.ACTION_PRESS:
+  //     // ^this working for the kill state
+
+  //     await notifee.cancelNotification(detail?.notification?.id);
+  //     // handleNotificationTap(detail.notification);
+  //     console.log('------------------------kill state ----------');
+
+  //     break;
+  //   case EventType.PRESS:
+  //     // ^ this is working for the background state
+  //     handleNotificationTap(detail.notification);
+  //     console.log('-------------------background state ----------');
+  //     break;
+  //   default:
+  //     break;
+  // }
+
+
+
+
+
+
+
+
+
+
